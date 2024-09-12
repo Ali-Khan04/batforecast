@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bat Forecast</title>
+    <style>
+      body {
+        background: #121212;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: "Arial", sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        background: #313030;
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        color: yellow;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        position: relative;
+      }
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .cityName {
+        font-size: 20px;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        margin-bottom: 25px;
+      }
+      .icon {
+        margin: 20px;
+        margin-top: 50px;
+      }
+      .icon img {
+        width: 100px;
+      }
+      .description {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .temp {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .info p {
+        font-size: 14px;
+        margin: 5px 0;
+      }
+      .info {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="name">Bat Forecast</p>
+      <div class="cityName">City Name</div>
+      <div class="icon">
+        <img
+          src="http://openweathermap.org/img/wn/01d.png"
+          alt="Weather Icon"
+        />
+      </div>
+      <div class="description">Sunny</div>
+      <div class="temp">36°C</div>
+      <div class="info">
+        <p>Wind: 10 km/h</p>
+        <p>Humidity: 50%</p>
+      </div>
+    </div>
+    <script src="\script.js"></script>
+  </body>
+</html>
