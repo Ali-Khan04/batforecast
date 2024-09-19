@@ -23,4 +23,16 @@ const getData = function (city) {
     });
 };
 
-getData("Islamabad");
+const getLocation = function () {
+  fetch("http://ip-api.com/json/")
+    .then((res) => res.json())
+    .then((data) => {
+      const city = data.city;
+      getData(city);
+    })
+    .catch((error) => {
+      console.error("Error fetching location:", error);
+    });
+};
+
+getLocation();
